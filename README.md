@@ -34,7 +34,7 @@ this interface will include the common functions that might use in other reposit
        _isGuid = isGuid;
    }
 ```
-3 - define the functions in BaseRepo calss : (will define one here and you can find the rest in the solution) \
+3 - define the functions in BaseRepo calss : (will define one here and you can find the rest in the solution) 
 ```C#
     public async Task<List<T>> GetAll()
     {
@@ -53,7 +53,7 @@ this interface will include the common functions that might use in other reposit
           }
     }
 ```
-4 - create other repositores that inherate BaseRepo class : 
+4 - create other repositores that inherate BaseRepo class : \
   4-1 create interface for user class and name it IUserRepo and inherate from IBaseRepo and the gerneric type will be user model:
   ```C#
     public interface IUserRepo : IBaseRepo<UserModel>
